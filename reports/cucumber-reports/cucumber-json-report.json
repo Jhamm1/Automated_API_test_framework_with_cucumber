@@ -1,0 +1,71 @@
+[
+  {
+    "description": "    All scenarios for the 'get' endpoint",
+    "keyword": "Feature",
+    "name": "get",
+    "line": 2,
+    "id": "get",
+    "tags": [
+      {
+        "name": "@all",
+        "line": 1
+      },
+      {
+        "name": "@get",
+        "line": 1
+      }
+    ],
+    "uri": "test/features/get.feature",
+    "elements": [
+      {
+        "id": "get;to-verify-match-status-in-response-for-various-inputs",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "To verify match status in response for various inputs",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@get",
+            "line": 1
+          },
+          {
+            "name": "@inputs",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I hit endpoint with request",
+            "match": {
+              "location": "test/step-definitions/get.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 303000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I should get 200 responseStatus",
+            "match": {
+              "location": "test/step-definitions/get.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
