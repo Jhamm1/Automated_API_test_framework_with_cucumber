@@ -4,7 +4,8 @@
     "description": "Automated API test framework with a cucumber interface",
     "main": "index.js",
     "scripts": {
-        "test": "./node_modules/.bin/cucumber-js ./test/features -r ./test/step-definitions/get.js --format json:./reports/cucumber-reports/cucumber-json-report.json & gulp cucumberReports"
+        "test": "./node_modules/.bin/cucumber-js ./test/features/createuser.feature -r ./test/step-definitions/createuser.js --format json:./reports/cucumber-reports/cucumber-json-report.json & gulp cucumberReports",
+        "start": "./node_modules/.bin/cucumber-js ./test/features/getuser.feature -r ./test/step-definitions/getusers.js --format json:./reports/cucumber-reports/cucumber-json-report.json & gulp cucumberReports"
     },
     "repository": {
         "type": "git",
@@ -23,6 +24,7 @@
         "cucumber": "^6.0.5",
         "cucumber-html-reporter": "^5.2.0",
         "express": "^4.17.1",
+        "fs": "0.0.1-security",
         "gulp": "^4.0.2",
         "request": "^2.88.2",
         "util": "^0.12.3"

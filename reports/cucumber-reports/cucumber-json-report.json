@@ -15,7 +15,7 @@
         "line": 1
       }
     ],
-    "uri": "test/features/get.feature",
+    "uri": "test/features/getuser.feature",
     "elements": [
       {
         "id": "get;to-verify-match-status-in-response-for-various-inputs",
@@ -42,26 +42,26 @@
             "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "I hit endpoint with request",
+            "name": "I hit endpoint \"/api/users?page=2\" to get users",
             "match": {
-              "location": "test/step-definitions/get.js:13"
+              "location": "test/step-definitions/getusers.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 303000000
+              "duration": 542000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I should get 200 responseStatus",
+            "name": "I should get 200 response status code",
             "match": {
-              "location": "test/step-definitions/get.js:19"
+              "location": "test/step-definitions/getusers.js:13"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 8000000
             }
           }
         ]

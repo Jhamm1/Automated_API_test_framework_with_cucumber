@@ -4,5 +4,5 @@ Feature: get
 
     @inputs
     Scenario: To verify match status in response for various inputs
-        When I hit endpoint with request
-        Then I should get 200 responseStatus
+        When I hit endpoint "/api/users?page=2" to get users
+        Then I should get 200 response status code

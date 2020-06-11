@@ -25,11 +25,11 @@ function GET(_url) {
  *                   e.g. { 'Content-Type': 'text/xml' }
  * @param _body - Body: XML(string format) or JSON object
  */
-async function POST(_url, _headers, _body) {
+async function POST(_url, _body) {
     var options = {
         method: 'POST',
         url: _url,
-        headers: _headers,
+        headers: { 'Content-Type': 'application/json' },
         body: _body,
         json: isJsonType(_body)
     };
