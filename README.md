@@ -9,3 +9,10 @@ cucumber-js ./test/features --tags @inputs --format json:./reports/cucumber-repo
 test getting user > `npm start`
 
 test creating user > `npm test`
+
+## Run inside a Docker container
+
+`docker build -t jhamm/automated_api_tests .`
+
+`docker run jhamm/automated_api_tests`
+
